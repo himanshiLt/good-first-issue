@@ -1,0 +1,15 @@
+---
+framework: jest
+preRun:
+     command:
+        - npm install
+preMerge:
+  pattern:
+    - "./tests/*.spec.js"
+postMerge:
+  pattern: 
+    - "./tests/*.spec.js"
+postRun:
+     command:
+        - node --version
+version: 1.0
